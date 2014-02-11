@@ -30,7 +30,7 @@ define(function() {
                 boss: 'static/images/enemies/boss.png',
                 explorer: 'static/images/enemies/explorer.png',
                 heavyexplorer: 'static/images/enemies/heavyExplorer.png',
-                meteor: 'static/images/enemies/ufo.png',//'static/images/enemies/meteorBig.png',
+                meteor: 'static/images/enemies/meteorBig.png',
 		//ufo: 'static/images/enemies/ufo.png',
                 raider: 'static/images/enemies/raider.png',
                 heavyraider: 'static/images/enemies/heavyRaider.png'
