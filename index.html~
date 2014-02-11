@@ -41,7 +41,7 @@
         <a href="#" id="play">Play It!</a>
 
         <div>
-          <section class="controls grid_5 alpha">
+          <!--<section class="controls grid_5 alpha">-->
             <h2>Controls</h2>
             <table>
               <tr>
@@ -65,8 +65,8 @@
                 <td>Pause/Unpause</td>
               </tr>
             </table>
-         </section>
-          <section class="powerups grid_5 omega push_2">
+         <!-- </section>
+          <section class="powerups grid_5 omega push_2">-->
             <h2>PowerUps</h2>
             <ul>
               <li class="cloning">
@@ -94,7 +94,7 @@
                 <p>Stash a powerful weapon!</p>
               </li>
             </ul>
-        </section>
+         <!-- </section>-->
           
           
            
