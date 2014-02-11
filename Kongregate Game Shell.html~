@@ -29,7 +29,7 @@
         var params = "kongregate_user_id=" + kongregate.services.getUserId() + 
                    "&kongregate_game_auth_token=" + kongregate.services.getGameAuthToken() +
                    "&random=" + (Math.random() * 1000000000);
-        kongregateAPI.embedFrame("game.html?" + params);
+        kongregateAPI.embedFrame("fight saucers/index.html?" + params);
       }
       
       // Begin the process of loading the Kongregate API:
@@ -39,7 +39,7 @@
     <!-- The div that the game will be placed into. Make sure to set the width and height properly -->
     <div id="contentdiv" style="top:0px; left:0px; width:700px; height:500px; borders:none;">
        
-	    <iframe src = "game.html"  width = "700"  height = "500">
+	    <iframe src = "fight saucers/index.html"  width = "700"  height = "500">
 
 	    <p>This Browser does not support the iFrame.</p>
 
