@@ -1,113 +1,100 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="content-type" content="text/html;">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-
-    <title>Fight Saucers - A simple spaceships battle game.</title>
+	<head>
+		<title>Fight Saucers</title>
 
     <link type="text/css" rel="stylesheet" media="all" href="static/css/grid.css" />
     <link type="text/css" rel="stylesheet" media="all" href="static/css/screen.css" />
     <script data-main="static/js/game" src="static/js/libs/require.js/require-2.1.1.js"></script>
-    <script type="text/javascript">
-    /*
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-35566668-1']);
-      _gaq.push(['_trackPageview']);
-      _gaq.push(['_addIgnoredRef', 'localhost']);
 
-     (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();*/
-    </script>
-  </head>
-  <body>
+	<style type="text/css">
+	canvas { display: none; border: 10px black solid; border-bottom-width: 0; margin-bottom: -7px }
 
-    <canvas id="gjs-canvas" width="100%" height="100%"></canvas>
+.textcontent {
+    float: left;
+    width: 350px;
+    margin-bottom: 4px;
+    }
+
+.ads {
+    float: left;
+    width: 350px;
+    }
+
+.textcontent:before {
+    clear: left;
+    }
+    
+    #container
+{
+  height: 490px;
+  position: relative;
+  width: 690px;
+}
+#viewport
+{
+  height: 100%;
+  width: 100%;
+}
+#controls
+{
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+</style>
+	
+	
+	
+
+	</head>
+	<body bgcolor="#F8D9FA">
+	
+	<div id="container">
+	<canvas id="gjs-canvas" width="100%" height="100%" style="z-index:1"></canvas>
+	 
+	<!--<input id="back-to-page" type="button" style="z-index:2; position:absolute; bottom:0; left:0" value="test"/>-->
+	<a href="." id="back-to-page" class="hide" style="z-index:2; position:absolute; top:5; right:0"><< Go Back</a>
+
+	</div>   
+	
     <div class="wrapper">
-      <header>
-        <h1>Fight Saucers</h1>
-        <p>
-          A simple space battleship game where you can collect powerups  and use them to fight your enemies!
-        </p>
-      </header>
+          <div class="page-container container_12" >
+	  <!--
+	<img id="imageplay" src="static/images/fightsaucers.png" >
+        <a href="#" id="play">Play It!</a>-->
+	<div  style="position:absolute;
+ top:0;
+ left:0;
+">
 
-      <div class="page-container container_12">
-        <a href="#" id="play">Play It!</a>
+	<img id="Image-Maps-Com-image-maps-2014-03-12-062141" src="static/images/fightsaucers.png" border="0" width="700" height="500" orgWidth="700" orgHeight="500" usemap="#image-maps-2014-03-12-062141" alt="" />
+<map name="image-maps-2014-03-12-062141" id="ImageMapsCom-image-maps-2014-03-12-062141">
+<area id="play" shape="rect" coords="317,136,421,174" alt="" title="play" style="outline:none;" target="_self" href="#"play/>
+<area shape="rect" coords="698,498,700,500" alt="Image Map" style="outline:none;" title="Image Map" href="http://www.image-maps.com/index.php?aff=mapped_users_0" />
+</map>
 
-        <div>
-          <section class="controls grid_5 alpha">
-            <h2>Controls</h2>
-            <table>
-              <tr>
-                <td><strong>W/S/A/D:</strong></td>
-                <td>Move</td>
-              </tr>
-              <tr>
-                <td><strong>Mouse:</strong></td>
-                <td>Aim</td>
-              </tr>
-              <tr>
-                <td><strong>Mouse Left Button:</strong></td>
-                <td>Shoot</td>
-              </tr>
-              <tr>
-                <td><strong>Space:</strong></td>
-                <td>Shoot a Missile</td>
-              </tr>
-              <tr>
-                <td><strong>ESC:</strong></td>
-                <td>Pause/Unpause</td>
-              </tr>
-            </table>
-         </section>
-          <section class="powerups grid_5 omega push_2">
-            <h2>PowerUps</h2>
-            <ul>
-              <li class="cloning">
-                <h3>Cloning</h3>
-                <p>You will clone a new life.</p>
-              </li>
-              <li class="forking">
-                <h3>Forking</h3>
-                <p>Your forking power will increase (+1 ammo)</p>
-              </li>
-              <li class="branching">
-                <h3>Branching</h3>
-                <p>Branch your laser guns</p>
-              </li>
-              <li class="pulling">
-                <h3>Pulling</h3>
-                <p>Pull to you every powerup around you for a limited time</p>
-              </li>
-              <li class="pushing">
-                <h3>Pushing</h3>
-                <p>Your enemies will be afraid of you, believe me.</p>
-              </li>
-              <li class="stashing">
-                <h3>Stashing</h3>
-                <p>Stash a powerful weapon!</p>
-              </li>
-            </ul>
-        </section>
-          
-          
-           
-           
-
-          </div>
-        </div>
-      </div>
       <div id="push"></div>
-    </div>
-    <footer>
+      	<div  style="position:absolute;
+ top:500;
+ left:0;
+">
+         <footer>
       <p>Gabriele Betti (c) 2014 - <a href="https://github.com/gabdab/fightsaucers">https://github.com/gabdab/fightsaucers</a></p>
       <a href="." id="back-to-page" class="hide">« Go Back</a>
     </footer>
-  </body>
+    </div>
+    </div>
+    </div>
+
+      </div>
+
+			<!--<div  class="page-container container_12" >
+				<img src="static/images/fightsaucers.png" >-->
+
+
+				
+		</body>
 </html>
+           

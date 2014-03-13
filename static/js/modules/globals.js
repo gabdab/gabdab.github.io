@@ -3,7 +3,7 @@ define(function() {
         game: {
             fps: 36,
             killScore: 5,
-            screenSize: [700-20,500-35]//[window.innerWidth-20, window.innerHeight-35]
+            screenSize: [700-10,500]//[window.innerWidth-20, window.innerHeight-35]
         },
         starsField: {
             image: 'static/images/background/starBackground.png',

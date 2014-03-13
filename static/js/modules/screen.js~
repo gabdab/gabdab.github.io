@@ -40,6 +40,7 @@ define(['underscore', 'gamejs', 'modules/globals', 'gamejs/utils/vectors'], func
             display.blit(fonts.small.render((accuracy * 100).toFixed(2) + '%', '#FFFFFF'), [globals.game.screenSize[0] / 2 + 125, globals.game.screenSize[1] / 2 + 36]);
             display.blit(fonts.small.render(total, '#FFFFFF'), [globals.game.screenSize[0] / 2 + 125, globals.game.screenSize[1] / 2 + 108]);
 		
+		gamejs.ready(main);
 
             return;
         }

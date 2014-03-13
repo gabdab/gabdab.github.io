@@ -21,7 +21,8 @@ html, body {
     color: white
 }
 
-body { background: #5e3f6b url('../images/background/indexBackground.png') repeat-x top left }
+/*body { background: #5e3f6b url('../images/background/indexBackground.png') repeat-x top left }*/
+/*body { background: url('../images/fightsaucers.png') 0 0 no-repeat  }*/
 
 .hide { display: none!important }
 
@@ -29,9 +30,9 @@ body { background: #5e3f6b url('../images/background/indexBackground.png') repea
   BASE TEXT
   -----------------------------------------------------------------------------
   */
-h1 { font-family: 'Arwing', verdana, helvetica, sans-serif; text-align: left; margin: 0 0 20px; padding-top: 10px; font-size: 56px; min-height: 102px; background: url('../images/background/indexHeader.png') top right no-repeat }
-h2 { font-size: 36px; text-decoration: underline; margin: 30px 0 14px }
-h3 { font-size: 20px }
+h1 { font-family: 'Arwing', verdana, helvetica, sans-serif; text-align: center; margin: 0 0 10px; padding-top: 10px; font-size: 28px; min-height: 56px; background: url('../images/background/indexHeader.png') top right no-repeat }
+h2 { font-size: 18px; text-decoration: underline; margin: 15px 0 7px }
+h3 { font-size: 10px }
 
 a { color: white; font-weight: bold }
 
@@ -44,15 +45,28 @@ p { font-size: 14px }
   */
 
 header { border-bottom: 12px #775088 solid; padding-top: 25px }
-header p { text-align: center; margin: 0 0 36px }
+header p { text-align: center; margin: 0 0 18px }
 
 .page-container { text-align: center }
 
-#play { display: inline-block; background-color: #775088; padding: 5px 25px; margin: 0; font-size: 36px; font-weight: bold; text-decoration: none; -webkit-border-bottom-right-radius: 10px; -webkit-border-bottom-left-radius: 10px; -moz-border-radius-bottomright: 10px; -moz-border-radius-bottomleft: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px }
+.#imageplay { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+   /*background: url('../images/fightsaucers.png') 0 0 no-repeat*/
+}
+
+.#play { 
+   position: absolute; 
+   top: 100px; 
+   left: 350; 
+   width: 100%; 
+}
+
+/*#play { display: inline-block; background-color: #775088; padding: 5px 25px; margin: 0; font-size: 36px; font-weight: bold; text-decoration: none; -webkit-border-bottom-right-radius: 10px; -webkit-border-bottom-left-radius: 10px; -moz-border-radius-bottomright: 10px; -moz-border-radius-bottomleft: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px }*/
 #play:hover { text-decoration: underline }
 #back-to-page { display: inline-block; float: left; margin-left: 10px; font-size: 14px; padding-top: 2px }
 
-.controls table { width: 100%; font-size: 24px }
+.controls table { width: 100%; font-size: 18px }
 .controls tr td:first-child { text-align: left }
 .controls tr td:last-child  { text-align: right }
 
@@ -66,14 +80,16 @@ header p { text-align: center; margin: 0 0 36px }
 .pushing   { background: url('../images/powerups/pushing.png') 0 0 no-repeat }
 .stashing  { background: url('../images/powerups/stashing.png') 0 0 no-repeat }
 
-.credits { text-align: left; padding-bottom: 50px }
-.credits ul { margin-top: 20px; list-style-type: disc }
+.credits { text-align: left; padding-bottom: 10px }
+.credits ul { margin-top:10px; list-style-type: disc }
 .credits li { margin-bottom: 10px }
 
-canvas { display: none; border: 10px black solid; border-bottom-width: 0; margin-bottom: -7px }
+/*canvas { display: none; border: 10px black solid; border-bottom-width: 0; margin-bottom: -7px }*/
 
 /* sticky footer */
-.wrapper { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -25px }
+.wrapper { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -25px;position:absolute;
+ top:0;
+ left:0; }
 footer { background: black }
 footer p { float: right; margin-right: 10px; padding-top: 2px }
 footer, #push { height: 25px; clear: both }

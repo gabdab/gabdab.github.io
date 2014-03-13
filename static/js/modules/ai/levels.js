@@ -98,7 +98,7 @@ define(['underscore', 'gamejs', 'modules/globals', 'modules/ai/foes'], function(
                 duration: 10000,
                 maxEnemies: 2,
                 enemies: [
-                    {type: foes.Meteor, prob: .07}
+                    {type: foes.Explorer, prob: .07}
 		   //{type: foes.Ufo, prob: 1}
 
                 ]
@@ -107,15 +107,14 @@ define(['underscore', 'gamejs', 'modules/globals', 'modules/ai/foes'], function(
                 duration: 45000,
                 maxEnemies: 3,
                 enemies: [
-                    {type: foes.Meteor, prob: .06},
-                    {type: foes.Explorer, prob: .04}
+                    {type: foes.Meteor, prob: .04},
+                    {type: foes.Explorer, prob: .06}
                 ]
             }),
             new Level({
                 duration: 60000,
                 maxEnemies: 4,
                 enemies: [
-                    {type: foes.Meteor, prob: .5},
                     {type: foes.Explorer, prob: .05},
                     {type: foes.HeavyExplorer, prob: .05}
                 ]
@@ -124,11 +123,11 @@ define(['underscore', 'gamejs', 'modules/globals', 'modules/ai/foes'], function(
                 duration: 75000,
                 maxEnemies: 5,
                 enemies: [
-                    {type: foes.Meteor, prob: .05},
+                    {type: foes.Meteor, prob: .02},
                     {type: foes.Explorer, prob: .05},
                     //{type: foes.HeavyExplorer, prob: .3},
 		    //{type: foes.Ufo, prob: .3},
-                    {type: foes.Raider, prob: .05}
+                    {type: foes.Raider, prob: .03}
                 ]
             }),
             new Level({
@@ -145,11 +144,11 @@ define(['underscore', 'gamejs', 'modules/globals', 'modules/ai/foes'], function(
                 duration: 80000,
                 maxEnemies: 7,
                 enemies: [
-                    {type: foes.Meteor, prob: .05},
+                    {type: foes.Meteor, prob: .02},
                     {type: foes.HeavyExplorer, prob: .05},
                     //{type: foes.Raider, prob: .3},
 		    //{type: foes.Ufo, prob: .3},
-                    {type: foes.HeavyRaider, prob: .05}
+                    {type: foes.HeavyRaider, prob: .03}
                 ]
             }),
             new BossLevel()
